@@ -7,7 +7,6 @@ from django.utils import timezone
 
 
 class Product(models.Model):
-
     pic = models.ImageField(upload_to='images/',blank=True, null=True)
     name = models.CharField(max_length=256)
     created_date = models.DateTimeField(default=timezone.now)
